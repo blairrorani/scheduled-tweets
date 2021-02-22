@@ -2,15 +2,20 @@
 <html>
   <head>
     <title>ScheduledTweets</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag "application", "data-turbo-track": "reload" %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container mx-auto font-mono">
+      <%= render partial: "shared/navbar" %>
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -1,0 +1,51 @@
+<div>
+  <ul class="flex space-x-20">
+    <li><a href="http://www.google.com">Google</a></li>
+    <li><a href="http://www.yahoo.com">Yahoo!</a></li>
+    <li><a href="http://www.amazon.com">Amazon</a></li>
+    <li><a href="http://www.ebay.com">eBay</a></li>
+  </ul>
+</div>
+
+
+
+<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+  <div class="flex-shrink-0">
+    <%= image_tag("image1.jpeg", class: "h-12 w-12", alt: "Joseph") %>
+  </div>
+  <div>
+    <div class="text-xl font-medium text-black">ChitChat</div>
+    <p class="text-gray-500">You have a new message!</p>
+  </div>
+</div>
+
+<button class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700">
+  Click me
+</button>
+
+<!-- Extracting classes using @apply -->
+<button class="btn btn-green">
+  Button
+</button>
+
+<style>
+  .btn {
+    @apply py-2 px-4 font-semibold rounded-lg shadow-md;
+  }
+  .btn-green {
+    @apply text-white bg-green-500 hover:bg-green-200;
+  }
+</style>
+
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0">
+      <%= image_tag("image1.jpeg", class: "h-48 w-full object-cover md:w-48", alt: "Joseph") %>
+    </div>
+    <div class="p-8">
+      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+      <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+      <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+    </div>
+  </div>
+</div>
